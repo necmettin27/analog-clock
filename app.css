@@ -1,0 +1,64 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: 0px;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clock{
+	position: relative;
+	width: 40rem;
+	height: 40rem;
+	border-radius: 50%;
+	border: 5px solid #000;
+	background:url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg") center;
+	background-repeat: no-repeat;
+	background-size: 88%;
+}
+
+.secs{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 12rem;
+	width: .1rem;
+	background-color: red;
+	transform: translateX(-50%);
+	transform-origin: 25% 0;
+}
+.mins{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 9rem;
+	width: .3rem;
+	border-radius: 20px;
+	background-color: #000;
+	transform: translateX(-50%);
+	transform-origin: 25% 0;
+}
+.hours{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 6rem;
+	width: .4rem;
+	background-color: #000;
+	transform: translateX(-50%);
+	transform-origin: 25% 0;
+}
+.dot{
+	position: absolute;
+	top: 49.8%;
+	left: 50%;
+	height: 1rem;
+	width: 1rem;
+	border-radius: 50%;
+	background-color: #000;
+	transform: translateX(-50%);
+}
